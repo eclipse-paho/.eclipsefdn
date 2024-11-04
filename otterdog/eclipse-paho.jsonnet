@@ -7,7 +7,6 @@ orgs.newOrg('eclipse-paho') {
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "read",
     },
   },
   _repositories+:: [
@@ -219,8 +218,6 @@ orgs.newOrg('eclipse-paho') {
       dependabot_security_updates_enabled: true,
       description: "Paho MQTT C client library for embedded systems.  Paho is an Eclipse IoT project (https://iot.eclipse.org/)",
       homepage: "https://eclipse.org/paho",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipseiot",
         "embedded",
