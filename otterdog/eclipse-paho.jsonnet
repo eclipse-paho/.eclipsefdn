@@ -128,7 +128,7 @@ orgs.newOrg('eclipse-paho') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      description: "An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS. API documentation: https://eclipse.github.io/paho.mqtt.c/",
+      description: "An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS. API documentation: https://eclipse-paho.github.io/paho.mqtt.c/",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "master",
       gh_pages_source_path: "/docs",
@@ -147,6 +147,7 @@ orgs.newOrg('eclipse-paho') {
       },
       webhooks: [
         orgs.newRepoWebhook('https://ci.appveyor.com/api/github/webhook?id=o2yvjdi7de7avc48') {
+          content_type: "json",
           events+: [
             "pull_request",
             "push"
