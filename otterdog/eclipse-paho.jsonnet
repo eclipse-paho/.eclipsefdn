@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-paho') {
+orgs.newOrg('iot.paho', 'eclipse-paho') {
   settings+: {
     description: "",
     name: "Eclipse Paho",
