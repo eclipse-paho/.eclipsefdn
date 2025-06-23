@@ -71,9 +71,7 @@ orgs.newOrg('iot.paho', 'eclipse-paho') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
@@ -300,9 +298,7 @@ orgs.newOrg('iot.paho', 'eclipse-paho') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
