@@ -165,7 +165,12 @@ orgs.newOrg('iot.paho', 'eclipse-paho') {
         },
       ],
       environments: [
-        orgs.newEnvironment('github-pages'),
+        orgs.newEnvironment('github-pages') {
+          deployment_branch_policy: "selected",
+          branch_policies: [
+            "master",
+          ],
+        },
       ],
     },
     orgs.newRepo('paho.mqtt.cpp') {
