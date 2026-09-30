@@ -176,9 +176,23 @@ orgs.newOrg('iot.paho', 'eclipse-paho') {
     orgs.newRepo('paho.mqtt.cpp') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "c-cpp",
+      ],
+      code_scanning_default_setup_enabled: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
+      description: "An Eclipse Paho C++ client library for MQTT for Windows, Linux and MacOS.",
+      has_discussions: true,
+      homepage: "https://eclipse.org/paho",
+      topics+: [
+        "eclipse-paho",
+        "eclipseiot",
+        "internet-of-things",
+        "iot",
+        "mqtt"
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -411,10 +425,23 @@ orgs.newOrg('iot.paho', 'eclipse-paho') {
     orgs.newRepo('paho.mqtt.rust') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "rust",
+      ],
+      code_scanning_default_setup_enabled: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      description: "paho.mqtt.rust",
+      description: "An Eclipse Paho Rust client library for MQTT for Windows, Linux and MacOS.",
+      has_discussions: true,
+      homepage: "https://eclipse.org/paho",
+      topics+: [
+        "eclipse-paho",
+        "eclipseiot",
+        "internet-of-things",
+        "iot",
+        "mqtt"
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
