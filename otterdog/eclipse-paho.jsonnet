@@ -425,9 +425,6 @@ orgs.newOrg('iot.paho', 'eclipse-paho') {
     orgs.newRepo('paho.mqtt.rust') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      code_scanning_default_languages+: [
-        "rust",
-      ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
       delete_branch_on_merge: false,
